@@ -1,0 +1,266 @@
+* {
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+  background: rgb(255,255,255);
+background: linear-gradient(117deg, rgba(255,255,255,1) 7%, rgb(164, 195, 235) 67%); 
+width: 100%;
+height: 100%;
+
+}
+.navbar{
+  background-color: cornflowerblue;
+  box-shadow: 0px 11px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 11px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 11px 5px 0px rgba(0,0,0,0.75);
+}
+.Home{
+  text-decoration: none;
+  margin-left: 15px;
+  color: wheat;
+}
+
+.Home:hover{
+  color:rgb(18, 4, 54);
+}
+
+.nav ul li{
+  list-style: none;
+  display: inline;
+  margin-left: 50px;
+  border-left: 1px solid wheat;
+  
+  padding-left: 10px;
+}
+
+.nav ul li:hover{
+  color: wheat;
+}
+
+.nav ul a{
+  text-decoration: none;
+  color: rgb(3, 3, 36);
+}
+
+
+
+.nav{
+  display: flex;
+  font-size: 30px;
+  gap: 700px;
+  padding: 5px;
+}
+
+
+
+.gridbox{
+  display: flex;
+  background: url(./background.png);
+  background-repeat: no-repeat;
+ background-size: cover;
+ align-items: center;
+ gap: 400px;
+ padding-left: 10px;
+ padding-bottom: 80px;
+ padding-top: 30px;
+}
+
+.left h1{
+  text-align: center;
+  font-size: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.port{
+  color: rgb(241, 185, 164);
+}
+
+.git{
+  margin-left: 180px;
+  margin-top: 10px;
+  border: 0px solid orangered;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(241, 185, 164);
+  font-size: 18px;
+  
+}
+
+.git a{
+  color:black ;
+  text-decoration: none;
+  
+}
+
+.git:hover{
+  background-color: rgb(231, 107, 65);
+  cursor: pointer;
+}
+
+.git a:hover{
+  color: wheat;
+  cursor: pointer;
+}
+
+.project{
+  background-color: black;
+  padding-bottom: 50px;
+  border-right: #d62828 solid;
+}
+
+
+.project h1{
+  text-align: center;
+  color: white;
+  /* padding-top: 20px; */
+}
+
+.project_flex{
+  display: flex;
+  text-align: center;
+  gap: 435px;
+  margin-left: 110px;
+  margin-top: 30px;
+}
+
+.all{
+  border: 0px solid #023047;
+  padding: 8px 20px 8px 20px;
+  border-radius: 15px;
+  font-size: 17px;
+}
+
+.p1{
+  background-color: #023047;
+  color: orangered;
+  font-weight: bolder;
+}
+
+.p2{
+  background-color: #ffb703;
+  color: #023047;
+  font-weight: bolder;
+}
+
+.p3{
+  background-color: #d62828;
+  color: wheat;
+  font-weight: bolder;
+}
+
+.hire{
+  text-align: center;
+  padding: 30px 30px;
+}
+
+.hire h1{
+  color: #d62828;
+  padding-bottom: 20px;
+}
+
+.hire button{
+  border: 0px solid ;
+  border-radius: 5px;
+  background-color: #023047;
+  color: wheat;
+  padding: 5px 25px 5px 25px;
+  font-size: 20px;
+}
+
+/* footer{
+  background-color: #023047;
+  text-align: center;
+} */
+/* 
+.con{
+  
+} */
+
+footer p{
+  color:white;
+}
+
+footer {
+  text-align: center;
+  background: linear-gradient(91deg, #060a3c, #eed176);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 19%}
+    50%{background-position:100% 82%}
+    100%{background-position:0% 19%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 19%}
+    50%{background-position:100% 82%}
+    100%{background-position:0% 19%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 19%}
+    50%{background-position:100% 82%}
+    100%{background-position:0% 19%}
+}
+
+.icon{
+  font-size: 30px;
+  padding-top: 20px;
+  /* margin-left: 10px; */
+}
+
+.fa-brands{
+  margin-left: 20px;
+}
+
+.con h1{
+  color: orangered;
+}
+
+ @media screen and (max-width:1336px) {
+  .nav ul li{
+    display: none;
+  }
+
+  .navbar{
+    display: none;
+  }
+} 
+
+
+@media screen and (max-width:1280px) {
+  .project_flex{
+    display:block;
+    text-align: center;
+    margin: 0px;
+  }
+  .all{
+    margin-top: 20px;
+    width: 100%;
+    margin: 0px;
+  }
+  .gridbox .left{
+   max-width:fit-content;
+   margin-right: auto;
+   margin-left: auto;
+  }
+  .gridbox .right{
+    display: none;
+  }
+
+  .git{
+    text-align: center;
+    margin-left: 40%;
+  }
+}
+
